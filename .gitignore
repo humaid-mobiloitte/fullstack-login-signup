@@ -1,0 +1,13 @@
+# Backend ignores
+backend/node_modules/
+backend/.env
+backend/logs/
+
+# Frontend ignores
+frontend/node_modules/
+frontend/.env
+frontend/dist/
+
+# Common ignores
+.DS_Store
+Thumbs.db

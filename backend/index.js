@@ -15,7 +15,12 @@ app.get('/ping',(req,res)=>{
 
 app.use(bodyParser.json())
 app.use(cors())
+
+//LOGIN AUR SIGNUP KE LIYE ROUTER 
 app.use('/auth',AuthRouter)
+
+//PRODUCTS KE LIYE ROUTER....sort of home page
+app.use('/products',AuthRouter)
 
 app.listen(PORT, () =>{
     console.log(`server is running on port ${PORT}`)
